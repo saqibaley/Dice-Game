@@ -1,0 +1,59 @@
+/* Keep the @import at the top */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* <=====-TwilWind-CSS-=====> */
+@import "tailwindcss";
+
+/* index.css */
+.resetScore {
+  font-family: "Roboto", sans-serif; /* Optional: Use your preferred font */
+}
+
+.animated-text {
+  display: inline-block;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%); /* Start from left */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* End at original position */
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%); /* Start from right */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* End at original position */
+    opacity: 1;
+  }
+}
+
+/* GameRule ANimation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* <<===Loader-CSS===> */
